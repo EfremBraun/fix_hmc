@@ -19,7 +19,7 @@ neighbor	${skin} bin
 neigh_modify	delay 0 every 1
 
 fix		1 all rigid/small molecule
-fix		2 all hmc 3 8768 200 rigid adjust yes
+fix		2 all hmc 3 8768 200 rigid adjust
 
 thermo		40
 thermo_style	custom step press temp pe ke f_2[1] f_2[2] f_2[3]
