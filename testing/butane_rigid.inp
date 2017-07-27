@@ -29,7 +29,7 @@ compute_modify  thermo_temp extra 0
 timestep	20
 
 fix		1 all rigid/nve/small molecule
-fix		2 all hmc 10 5643 ${T} 1 adjust yes
+fix		2 all hmc 10 5643 ${T} rigid adjust yes
 
 
 compute		eatom all pe/atom
